@@ -47,3 +47,4 @@ CREATE TABLE visits(
 );
 
 CREATE INDEX animal_id_asc ON visits(animal_id ASC);
+CREATE INDEX visit_index ON visits (vet_id, id, animal_id, date_of_visit);
